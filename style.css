@@ -1,0 +1,76 @@
+.progress-bar-init {
+    height: 3px;
+    position: relative;
+    overflow: visible;
+    background-color: #e9e9e9;
+    top: 72px;
+    left: -10px;
+    width: 238px;
+}
+
+/*@-webkit-keyframes progress-percent-ani {
+    0% {
+        background: -webkit-gradient(linear, left top, right top, from(#afd541), color-stop(0.25, #8fc31c), color-stop(0.5, #8fc31c), color-stop(0.75, #8fc31c), to(#8fc31c));
+    }
+    25% {
+        background: -webkit-gradient(linear, left top, right top, from(#8fc31c), color-stop(0.25, #afd541), color-stop(0.5, #8fc31c), color-stop(0.75, #8fc31c), to(#8fc31c));
+    }
+    50% {
+        background: -webkit-gradient(linear, left top, right top, from(#8fc31c), color-stop(0.25, #8fc31c), color-stop(0.5, #afd541), color-stop(0.75, #8fc31c), to(#8fc31c));
+    }
+    75% {
+        background: -webkit-gradient(linear, left top, right top, from(#8fc31c), color-stop(0.25, #8fc31c), color-stop(0.5, #8fc31c), color-stop(0.75, #afd541), to(#8fc31c));
+    }
+    100% {
+        background: -webkit-gradient(linear, left top, right top, from(#8fc31c), color-stop(0.25, #8fc31c), color-stop(0.5, #8fc31c), color-stop(0.75, #8fc31c), to(#afd541));
+    }
+}*/
+
+.progress-bar-percent {
+    background-color: #8fc31c;
+    /*-webkit-animation: progress-percent-ani 1s linear 2s infinite normal;*/
+    -moz-transition-property: all;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-property: all;
+    -o-transition-duration: 0.5s;
+    -o-transition-timing-function: linear;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    height: 100%;
+}
+
+.progress-bar-init .progress-hint {
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0 3px;
+    background: #8fc31c;
+    width: 46px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: -23px;
+}
+
+.progress-bar-init .progress-hint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -4px;
+    width: 0;
+    height: 0;
+    border-width: 4px 4px;
+    border-style: solid;
+    border-color: transparent transparent #8fc31c;
+    font-size: 0;
+    line-height: 0;
+}
